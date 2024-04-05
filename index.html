@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Portifolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6c9570298.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Android Developer / iOS Developer </p>
+                <h1>Hey, I'm <span>Ankit Lal Sinha</span> <br> from Bihar.</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------ About Section ----------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" class="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        My Name is Ankit Lal Sinha, I am a dedicated and aspiring professional with a Bachelor of
+                        Technology in Computer Engineering and ongoing pursuit of a Post Graduate Diploma in Mobile
+                        Computing. Passionate about technology, I am keen on gaining practical experience to contribute
+                        positively to the industry. My internship experience has equipped me with skills in Java, HTML,
+                        CSS, and Android Studio. I am proficient in various programming languages and tools, with
+                        certifications in Core Java and Problem Solving on MySQL. My projects, including Skye (a
+                        voice-based AI desktop assistant) and Handwritten Digits Recognition, and ASR Movie(Online Movie
+                        Ticket Booking System) reflect my innovation and problem-solving abilities. With a positive
+                        attitude and strong work ethic, I am poised to excel in the tech field and make valuable
+                        contributions to innovative projects and teams.
+                    </p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android / iOS apps using Java & Swift
+                                languages. </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July 2020 - January 2023</span><br><h3>Internship At Quiesta Technologies Pvt. Ltd.</h3>
+                                <br>
+                                <p>Quiesta Has Profound Experience In Software, Web And Mobile App Development Services.
+                                    This Is The World Of Technology And We Make It Different. Our Mission Is To Make
+                                    Life Easy With Technology At A Superior Level. We Work Together To Achieve Great
+                                    Things Through Simplicity. We Offer Challenges And Our Staff Aren’t Just IT Support,
+                                    But Active In Society, Allowing Our Fully Integrated, Technology Specialists To
+                                    Navigate Potential Cross-Cultural Difficulties With Support And Implementations For
+                                    Global IT Policies.</p>
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sep 2023 - Feb 2024 : CDAC</span><br> Completed a specialized program called Post
+                                Graduate Diploma in Mobile Computing (PG-DMC) at CDAC-Sunbeam Infotech Pvt. Ltd in Pune.
+                                This course focused on teaching various aspects of mobile computing, including app
+                                development, mobile operating systems, and network optimization for mobile devices. It
+                                lasted from September 2023 to February 2024.
+                            </li>
+                            <li><span>2019 - 2023 : B.TECH</span><br>Batchlor of Technology(B.Tech) in Computer
+                                Engineering from G.H. Raisoni College of Engineering and Management, Pune Which is
+                                Affiliated to SPPU Pune, with Aggregate 67%.
+                            </li>
+                            <li><span>2017 - 2019 : HSC</span><br>Subedar Singh College, Karahgar, Rohatas with
+                                Aggregate 73.60%.
+                            </li>
+                            <li><span>2016 - 2017 : SSC</span><br>Model School Dalmianagar With Aggregate 81.70%.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------ Services Section ----------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development is the process of creating and maintaining websites or web applications
+                        accessible via the internet. It involves two main aspects: frontend development, focusing on the
+                        visible parts of a website using HTML, CSS, and JavaScript, and backend development, handling
+                        the behind-the-scenes functionality with server-side languages like Python or JavaScript. Web
+                        development also entails working with databases, APIs, and frameworks to build engaging and
+                        functional web experiences for users.
+                    </p>
+                    <a href="https://www.w3schools.com/whatis/">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Android Development</h2>
+                    <p>
+                        Android development: Creating applications for Android devices using languages like Java or
+                        Kotlin, utilizing features like GPS and camera, with development tools such as Android Studio.
+                    </p>
+                    <a href="https://developer.android.com/">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>iOS Development</h2>
+                    <p>
+                        iOS development involves creating applications for Apple's mobile operating system using
+                        languages like Swift, utilizing Xcode as the primary IDE. Developers follow Apple's design
+                        guidelines, employ frameworks like UIKit and CoreData, and distribute apps through the App
+                        Store. Continuous learning is essential due to frequent updates and evolving best practices for
+                        security and user experience.
+                    </p>
+                    <a href="https://developer.apple.com/">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------ Portfolio section ---------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>Online Movie Ticket Booking System</h3>
+                        <p>AAn online movie ticket booking platform streamlines movie selection, seat reservation, and
+                            secure payment processing. It offers easy navigation, diverse payment options, and features
+                            like seat selection and booking confirmations for enhanced user experience.You Can
+                            Download it From .
+                            <a href="https://github.com/W2-80477/Movie_Ticket_Booking_Project"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>Online Movie Ticket Booking System</h3>
+                        <p>An online movie ticket booking platform streamlines movie selection, seat reservation, and
+                            secure payment processing. It offers easy navigation, diverse payment options, and features
+                            like seat selection and booking confirmations for enhanced user experience.You Can
+                            Download it From.
+                            <a href="https://github.com/W2-80477/Movie_Ticket_Booking_Project"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>SKYE : Voice Based AI Desktop Assistant</h3>
+                        <p>The Query for the Assistant can be manipulated as per user's need. Speech Recognition is the
+                            process
+                            of converting Audio into Text. Python Provide an API called Speech Recognition to allow us
+                            to convert
+                            Audio into Text for further processing. You Can Download it From.
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!------------------------------ Contact --------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>ankitsinha25061909@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91- 8210129246</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100009041362552"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/ankit-lal-sinha-4b1659213/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ankitsinha2506"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/mr_ankit_82?igsh=MW5nNnNoZzBoY25mcw%3D%3D"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Ankit <i class="fa-solid fa-heart"></i>. Made for Me</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenues = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenues.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenues.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwCrtBnPYlpmlhs-wCYgCy2IA199EblyLmjP7f4KTmyqnWng8HS9lrcjTZFjnGhIWkR3g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
